@@ -3,7 +3,6 @@ const express = require('express');
 const hbs = require('hbs');
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
-const postWebhook = require('./utils/postWebhook');
 
 // Create express app
 const app = express();
