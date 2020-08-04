@@ -17,7 +17,8 @@ getWeather = (latitude, longitude, callback) => {
             }
             callback(error);
         } else {
-            const forecast = `Current temperature is ${body.current.temperature}° and there is a ${body.current.precip}% chance of rain.`;
+            const forecast = `Current temperature is ${body.current.temperature}° and there is a ${body.current.precip}% chance of rain. \
+                Wind speed is ${body.current.wind_speed} in the ${body.current.wind_dir} direction.`;
             callback(undefined, forecast);
         }
     })
